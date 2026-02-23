@@ -3,16 +3,15 @@ from agno.agent import Agent
 from agno.models.groq import Groq
 
 agent = Agent(
-    model=Groq(id="llama-3.1-8b-instant"),
+    model=Groq(id="openai/gpt-oss-20b"),
     markdown=True,
 )
-
 
 def start_cli():
     while 1:
         user_input = prompt('>')
         if user_input == 'q':
             break
-        agent.print_response(user_input, stream=True)
+        agent.print_response(user_input,stream=True)
 
 start_cli()

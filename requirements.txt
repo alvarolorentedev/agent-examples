@@ -2,3 +2,8 @@ agno
 groq
 prompt_toolkit
 ddgs
+lancedb
+voyageai
+tantivy
+sqlalchemy
+fastapi
